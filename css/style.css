@@ -1,0 +1,151 @@
+*{
+    margin: 0; padding: 0;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    
+}
+
+*::-webkit-scrollbar { width: 0; }
+
+
+.wrapper_cards{
+    width: 100%;
+    display: flex;
+    background-image: url(../img/7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    padding: 35px 0;
+
+  }
+  
+  
+  .container{
+    display: flex;
+    height: 976px;
+    overflow-y: auto;
+    
+  }
+    
+  
+  .card_all{
+    display: grid;
+    grid-template-columns: repeat(4, 313px);
+    gap:40px;
+    margin: 0 50px;
+  }
+  
+  .card{
+    display: flex;
+    flex-direction:column;
+    height: 100%;
+    
+  }
+  
+  .next,.exit{
+    background: #80d9d9d9;
+    border-radius: 19px;
+    width: 60px;
+    height: 60px;
+    border:none;
+    cursor: pointer;
+  }
+
+  .next a{
+    text-decoration: none;
+  }
+  
+  .exit a{
+    text-decoration: none;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .bg_op{
+    background: rgba(217, 217, 217, 0.5);
+    font-size: 29px;
+    line-height: 35px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+  
+  }
+  
+  .bg_op > button{
+    background: rgba(75, 99, 230, 0.7);
+    border-radius: 16px;
+    border: none;
+    font-size: 29px;
+    line-height: 35px;
+    padding: 4px 43px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .bg_op > p{
+    margin-bottom:20px;
+    
+  }
+
+
+@media screen and (max-width: 1599px){
+    .card_all{
+        grid-template-columns: repeat(3, 313px); 
+        
+    }
+}
+
+@media screen and (max-width: 1365px){
+    .card_all{
+        grid-template-columns: repeat(2, 313px); 
+        
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .card_all{
+        grid-template-columns: repeat(1, 313px); 
+        
+    }
+}
+
+@media screen and (max-width: 767px){
+    .card_all{
+        
+        grid-template-columns: repeat(1, 230px);
+        margin: 0 25px;
+      }
+      .next,.exit{
+        border-radius: 14px;
+        width: 45px;
+        height: 45px;
+      }
+      
+      .bg_op{
+        font-size: 20px;
+        padding: 15px 5px;
+      }
+      
+      .bg_op > button{
+        border-radius: 16px;
+        font-size: 17px;
+      }
+
+      .bg_op > p{
+        margin-bottom:10px;
+      }
+}
+
+@media screen and (max-width: 480px){
+
+}
+
+

@@ -1,0 +1,28 @@
+*{
+    margin: 0; padding: 0;
+}
+
+
+body{
+    background-image: url(../img/Russia/map.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+button a{
+    text-decoration: none;
+    align-items: center;
+}
+
+button{
+    width: 58px;
+    height: 59px;
+    border: none;
+    background: rgba(217, 217, 217, 0.8);
+    border-radius: 12px;
+    margin: 10px 10px;
+}
